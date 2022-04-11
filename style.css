@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "manrope";
+    src: url(./font/Manrope-Regular.ttf);
+}
+
+body {
+    font-family: "manrope";
+    color: white;
+    font-weight: 800;
+    background-color: hsl(219, 23%, 15%);
+    text-align: center;
+}
+
+.ad_app {
+    background-color: hsl(216, 32%, 33%);
+    display: grid;
+    height: 400px;
+    grid-row: 20% 50% 10% 20%;
+    border: 1px solid hsl(216, 32%, 33%);
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    color: hsl(150, 100%, 66%);
+}
+
+p {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 20px;
+    height: 150px;
+}
+
+.icon img {
+    background: hsl(150, 100%, 66%);
+    border-radius: 30px;
+    padding: 15px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -30px;
+}
+
+.pattern_desk {
+    display: none;
+}
+
+
+@media screen and (min-width: 1020px) {
+
+    .ad_app {
+        max-width: 900px;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .pattern {
+        display: none;
+    }
+
+    .pattern_desk {
+        display: block;
+    }
+
+    .icon :hover {
+        box-shadow: 3px 3px 16px 3px hsl(150, 100%, 66%)
+    }
+
+
+}
